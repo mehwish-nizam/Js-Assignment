@@ -45,7 +45,7 @@ for(var i = 0; i<username.length; i++){
         break;
     }
 }
-//Task 13
+//Task 14
 var A = ["cake", "apple pie", "cookie", "chips", "patties"];
 var choice = prompt("Wellcome to ABC Bakery. What do you want to order sir/ma'am","cookie").toLowerCase();
 for(i = 0; i<A.length; i++){
@@ -59,7 +59,7 @@ if(i===A.length){
 else{
     alert(choice + " is present at index "+i);
 }
-//Task 14
+//Task 15
 var password = prompt("Enter password");
 var count = 0;
 var count2 = 0;
@@ -92,7 +92,7 @@ if(count2===0){
 if(check!=0){
     document.write("<br> Please Enter a valid Password")
 }
-//Task 15
+//Task 16
 var university = "University of Karachi"; 
 var newuniversity = university.split(' ');
 for(var i = 0; i<newuniversity.length; i++){
@@ -100,18 +100,19 @@ for(var i = 0; i<newuniversity.length; i++){
     document.write("<br>"+newuniversity[i][j]);}
     document.write("<br>");
 }
-//Task 16
+//Task 17
 var userInput = prompt("Enter any word");
 document.write("<br> User Input: "+userInput+"<br> Last character of input: "+userInput[userInput.length-1]);
-//Task 17
-var text = "The quick brown fox jumps over the lazy dog"
+//Task 18
+var strstr = "The quick brown fox jumps over the lazy dog";
+str =  strstr.split(' ');
 var count = 0;
-for(var i = 0; i<text.length; i++){
-    if((text[i]=='t'||text[i]=='T')&&(text[i+1]=='h'||text[i+1]=='H')&&(text[i+2]=='e'||text[i+2]=='E')){
+for(var i =0; i<str.length;i++){
+    if(str[i].toLowerCase()==="the"){
         count++;
     }
 }
-document.write("<br> Text: "+text+"<br> There are "+count+" occurence(s) of word 'the'");
+document.write("<br> Text: "+strstr+"<br> There are "+count+" occurences of the word 'the'");
 /****************************************Chapter 26-30************************************************* */
 //Task 1
 var num1 = prompt("Enter a positive integer: ",3.45214);
